@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CryptoSwift
 
 class ViewController: UIViewController {
 
@@ -42,7 +43,8 @@ class ViewController: UIViewController {
         let newStr3 = newStr2.stringByReplacingOccurrencesOfString("=", withString: "")
         print(newStr3)
         
-        print(newStr3.md5())
+        print(newStr3.toMd5())//自己扩展
+        print(newStr3.md5())//第三方使用
     }
 
 
